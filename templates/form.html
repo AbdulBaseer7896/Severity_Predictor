@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crash Severity Predictor</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        select, input { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Crash Severity Prediction</h1>
+    <form action="/predict" method="post">
+        <!-- Categorical Fields -->
+        <div class="form-group">
+            <label>Road Surface Condition:</label>
+            <select name="RoadSurfaceCondition" required>
+                <option value="Dry">Dry</option>
+                <option value="Wet">Wet</option>
+                <option value="Snow">Snow</option>
+                <option value="Ice">Ice</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Event Location on Roadway:</label>
+            <select name="EventLocationOnRoadway" required>
+                <option value="On Roadway">On Roadway</option>
+                <option value="Shoulder">Shoulder</option>
+                <option value="Median">Median</option>
+                <option value="Off Roadway">Off Roadway</option>
+            </select>
+        </div>
+        
+        <!-- Binary Fields (Yes/No) -->
+        <div class="form-group">
+            <label>Hit and Run:</label>
+            <select name="EventHitandRun" required>
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Pedestrian Involved:</label>
+            <select name="PedestrianInvolved" required>
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+        </div>
+        
+        <!-- Numerical Fields -->
+        <div class="form-group">
+            <label>Vehicle Damage ($):</label>
+            <input type="number" name="Vehicle1Damage" min="0" step="100" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Property Damage Amount ($):</label>
+            <input type="number" name="PropertyDamageAmount" min="0" step="100" required>
+        </div>
+        
+        <!-- Add similar fields for all other features -->
+        
+        <button type="submit">Predict Severity</button>
+    </form>
+</body>
+</html>
