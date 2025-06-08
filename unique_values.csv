@@ -1,12 +1,12 @@
 RoadSurfaceCondition,EventHitandRun,EventLocationOnRoadway,EventWeatherCondition,EventWorkZone,PedestrianInvolved,BicycleInvolved,Intoxication,Speeding,DisregardControl,NightTime,HeavyTruck,MotorCycle,AnimalInvolved,ElectronicDistraction,Driver1Sex,Driver1Condition,Driver1AlcoholUse,Driver1DrugUse,PropertyDamageAmount,HighestSeverity,Vehicle1Damage
 Dry,No,Gore,Clear,No,0,0,0,0,0,0,0,0,0,0,Female,Apparently Normal,No,No,0,Fatal,15000
-Unknown,Yes,Median,Cloudy,Yes,1,1,1,1,1,1,1,1,1,1,Male,Asleep or Fatigued,Yes,Unknown,10,Incapacitating,10000
-Wet,,Off Roadway,"Fog, Smog, Smoke",,,,,,,,,,,,No Data,"Emotional (depression, angry, disturbed, etc)",,Yes,50,Non-incapacitating,20000
-,,On Roadway,"Other, Explain in Narrative",,,,,,,,,,,,Unknown,Ill (sick) or Fainted,,,100,Possible,3500
+Wet,Yes,Median,Cloudy,Yes,1,1,1,1,1,1,1,1,1,1,Male,Asleep or Fatigued,Yes,Yes,10,Incapacitating,10000
+,,Off Roadway,"Fog, Smog, Smoke",,,,,,,,,,,,,"Emotional (depression, angry, disturbed, etc)",,,50,Non-incapacitating,20000
+,,On Roadway,"Other, Explain in Narrative",,,,,,,,,,,,,Ill (sick) or Fainted,,,100,Possible,3500
 ,,Outside Right-of-Way,Rain,,,,,,,,,,,,,"Other, Explain in Narrative",,,175,,8000
 ,,Roadside,,,,,,,,,,,,,,"Seizure, Epilepsy, Blackout",,,200,,5000
 ,,Separator,,,,,,,,,,,,,,Under the influence of Medications/Drugs/Alcohol,,,250,,500
-,,Shoulder,,,,,,,,,,,,,,Unknown,,,300,,2500
+,,Shoulder,,,,,,,,,,,,,,,,,300,,2500
 ,,,,,,,,,,,,,,,,,,,400,,10000
 ,,,,,,,,,,,,,,,,,,,500,,6000
 ,,,,,,,,,,,,,,,,,,,600,,20000
